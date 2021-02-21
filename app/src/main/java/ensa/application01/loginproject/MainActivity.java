@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-    EditText emailId, password;
+    EditText emailId, password; // Declaration des textView et les bouttons
     Button btnSignUp;
     TextView tvSignIn;
     FirebaseAuth mFirebaseAuth;
@@ -27,15 +27,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        emailId = findViewById(R.id.editTextTextEmailAddress);
-        password = findViewById(R.id.editTextTextPassword);
-        btnSignUp = findViewById(R.id.button);
-        tvSignIn = findViewById(R.id.textView);
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+        mFirebaseAuth = FirebaseAuth.getInstance(); //recuperation de l'instance
+        emailId = findViewById(R.id.editTextTextEmailAddress); //recuperation d'email a partir de l'activity main
+        password = findViewById(R.id.editTextTextPassword); //recuperation de mot de passe a partir de l'activity main
+        btnSignUp = findViewById(R.id.button); //recuperation du boutton a partir de l'activity main
+        tvSignIn = findViewById(R.id.textView); //recuperation de text view a partir de l'activity main
+        btnSignUp.setOnClickListener(new View.OnClickListener() { // definir la methode onClick du boutton sign up
             @Override
             public void onClick(View v) {
-                String email = emailId.getText().toString();
+                String email = emailId.getText().toString(); // recuperer email entré dans l'activity
                 String pwd = password.getText().toString();
                 if(email.isEmpty()){
                     emailId.setError("Please Enter Email");
