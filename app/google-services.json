@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127743415195",
+    "project_id": "loginproject-9a617",
+    "storage_bucket": "loginproject-9a617.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127743415195:android:ac85e89fa00843dc1ac73e",
+        "android_client_info": {
+          "package_name": "ensa.application01.loginproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127743415195-g3vb3tjc6vaadh9a8b59aj2vi20o26jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ilqHMi3vBVrvSwlheMEw1qLg3ZXQQR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127743415195-g3vb3tjc6vaadh9a8b59aj2vi20o26jk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
